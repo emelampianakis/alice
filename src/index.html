@@ -2,12 +2,10 @@
 <html lang="en">
   <script>
     (function () {
-      const base = '/alice';
-      const params = new URLSearchParams(window.location.search);
-      const redirect = params.get('redirect');
-
+      const redirect = sessionStorage.getItem('redirect');
       if (redirect) {
-        history.replaceState(null, '', base + redirect);
+        sessionStorage.removeItem('redirect');
+        history.replaceState(null, '', redirect.replace('/alice', ''));
       }
     })();
   </script>

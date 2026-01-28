@@ -4,15 +4,8 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      const base = '/alice';
-      const path = location.pathname.startsWith(base)
-        ? location.pathname.slice(base.length)
-        : location.pathname;
-
-      // Default to / if empty
-      const redirect = path || '/';
-
-      location.replace(base + '/?redirect=' + encodeURIComponent(redirect));
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      location.replace('/alice/');
     </script>
   </head>
   <body></body>
