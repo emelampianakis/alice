@@ -58,6 +58,7 @@
               "sourceMap": true
             },
             "pages": {
+              "outputMode": "static",
               "outputHashing": "all",
               "fileReplacements": [
                 {
