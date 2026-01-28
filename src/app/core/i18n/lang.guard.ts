@@ -9,7 +9,7 @@ export const langGuard: CanActivateFn = (route) => {
   const langParam = (route.paramMap.get('lang') || '').toLowerCase();
 
   if (!langSvc.isSupported(langParam)) {
-    return router.parseUrl('/en');
+    return router.createUrlTree(['/', 'en']);
   }
 
   langSvc.setLang(langParam);
