@@ -1,0 +1,44 @@
+<section class="about">
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="text">
+      <h1>{{ 'about.title' | translate }}</h1>
+      <p class="lead">
+        {{ 'about.lead' | translate }}
+      </p>
+    </div>
+
+    <div class="visual">
+      <div class="photo-placeholder">🙂</div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <h2>{{ 'about.story.title' | translate }}</h2>
+    <p>{{ 'about.story.p1' | translate }}</p>
+    <p>{{ 'about.story.p2' | translate }}</p>
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="expect">
+    <h2>{{ 'about.expect.title' | translate }}</h2>
+
+    <ul>
+      <li>{{ 'about.expect.points.personalized' | translate }}</li>
+      <li>{{ 'about.expect.points.safe' | translate }}</li>
+      <li>{{ 'about.expect.points.progress' | translate }}</li>
+      <li>{{ 'about.expect.points.support' | translate }}</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <h2>{{ 'about.cta.title' | translate }}</h2>
+    <p>{{ 'about.cta.subtitle' | translate }}</p>
+
+    <a class="btn primary" [routerLink]="['/', lang(), 'contact']">
+      {{ 'about.cta.button' | translate }}
+    </a>
+  </section>
+</section>

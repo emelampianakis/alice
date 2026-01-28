@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "programs": "Cours & Programmes",
+    "about": "À propos",
+    "contact": "Contact",
+    "book": "Réserver un cours"
+  },
+  "home": {
+    "title": "Apprenez le français avec confiance",
+    "subtitle": "Français général, conversation et préparation DELF/DALF",
+    "hero": {
+      "title": "Learn French with confidence",
+      "subtitle": "Online French classes, conversation and exam preparation",
+      "ctaPrimary": "See programs",
+      "ctaSecondary": "Book a lesson"
+    },
+    "video": {
+      "caption": "Presentation video coming soon"
+    },
+    "programs": {
+      "title": "Programs",
+      "cta": "Explore all programs",
+      "general": {
+        "title": "French language courses",
+        "desc": "Structured courses from A1 to C1."
+      },
+      "conversation": {
+        "title": "Conversation classes",
+        "desc": "Speak French with confidence and fluency."
+      },
+      "exam": {
+        "title": "DELF / DALF preparation",
+        "desc": "Targeted exam preparation with methodology."
+      }
+    },
+    "method": {
+      "title": "Ma méthode d’enseignement",
+      "intro": "Je vous aide à apprendre le français avec clarté, confiance et structure.",
+      "points": {
+        "personalized": "Cours personnalisés selon vos objectifs",
+        "structure": "Progression claire et structurée",
+        "support": "Accompagnement et retours entre les séances",
+        "results": "Résultats concrets, notamment pour les examens"
+      }
+    },
+    "cta": {
+      "title": "Prêt(e) à commencer le français ?",
+      "subtitle": "Parlez-moi de vos objectifs et trouvons ensemble la bonne formule.",
+      "button": "Me contacter"
+    }
+  },
+  "programs": {
+    "videoPlaceholder": "Vidéo de présentation bientôt disponible",
+    "pageTitle": "Cours & Programmes",
+    "pageSubtitle": "Choisissez le programme qui correspond à vos objectifs",
+    "cta": "Réserver un cours",
+    "general": {
+      "title": "Cours de français",
+      "desc": "Cours de français structurés du niveau débutant à avancé, axés sur la grammaire, le vocabulaire et l’expression.",
+      "levels": {
+        "A1": "Beginner level: learn basic grammar, pronunciation, and everyday vocabulary.",
+        "A2": "Elementary level: communicate in simple situations and build confidence.",
+        "B1": "Intermediate level: express opinions and understand longer conversations.",
+        "B2": "Upper-intermediate level: improve fluency and accuracy for work or studies.",
+        "C1": "Advanced level: master complex structures and nuanced expression."
+      }
+    },
+    "conversation": {
+      "title": "Cours de conversation",
+      "desc": "Améliorez votre aisance et votre fluidité à l’oral grâce à des conversations guidées sur des thèmes du quotidien.",
+      "levels": {
+        "B1": "Guided conversations to gain confidence and speak more naturally.",
+        "B2": "Debates and discussions to refine fluency and vocabulary.",
+        "C1C2": "Advanced conversations focusing on precision, style, and argumentation."
+      }
+    },
+    "exam": {
+      "title": "Préparation DELF / DALF",
+      "desc": "Préparation ciblée aux examens DELF et DALF avec méthodologie, examens blancs et retours personnalisés.",
+      "levels": {
+        "A1": "Introduction to the DELF A1 exam format and expectations.",
+        "A2": "Training for DELF A2 with structured exercises and mock exams.",
+        "B1": "Focused preparation for DELF B1 with exam strategies.",
+        "B2": "Intensive preparation for DELF B2, including written and oral practice.",
+        "C1": "Advanced methodology for DALF C1 with detailed feedback.",
+        "C2": "High-level preparation for DALF C2 with complex analysis and expression."
+      }
+    },
+    "workshops": {
+      "title": "Ateliers thématiques",
+      "desc": "Ateliers courts et ciblés sur des thèmes précis : expatriation, grammaire, phonétique, etc."
+    }
+  },
+  "workshops": {
+    "expatriation": {
+      "title": "Préparer son expatriation en France",
+      "desc": "Démarches administratives, vie quotidienne et conseils culturels pour s’installer sereinement."
+    },
+    "subjonctif": {
+      "title": "Maîtriser le subjonctif",
+      "desc": "Comprendre et utiliser le subjonctif naturellement grâce à une pratique guidée."
+    },
+    "phonetics": {
+      "title": "Les bases de la phonétique française",
+      "desc": "Améliorer la prononciation, le rythme et l’intonation avec des exercices pratiques."
+    }
+  },
+  "seo": {
+    "programs": {
+      "title": "Cours de français, conversation et préparation DELF/DALF",
+      "description": "Cours de français adaptés à votre niveau : français général, conversation, préparation aux examens DELF/DALF et ateliers thématiques."
+    },
+    "home": {
+      "title": "Cours de français en ligne – Apprenez avec confiance",
+      "description": "Cours de français en ligne, conversation, préparation DELF/DALF et ateliers thématiques."
+    },
+    "contact": {
+      "title": "Contact – Cours de français",
+      "description": "Contactez-moi pour des cours de français, de conversation ou une préparation aux examens."
+    },
+    "about": {
+      "title": "À propos – Professeure de français",
+      "description": "Découvrez mon parcours, ma méthode d’enseignement et comment je vous aide à apprendre le français avec confiance."
+    }
+  },
+  "footer": {
+    "tagline": "Professeure de français",
+    "rights": "Tous droits réservés"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Parlez-moi de vos objectifs et de vos disponibilités",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Votre message",
+      "submit": "Envoyer le message"
+    },
+    "reassurance": "Je réponds généralement sous 24 heures."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "lead": "Je suis professeure de français et j’accompagne les apprenants avec bienveillance et clarté.",
+    "story": {
+      "title": "Mon parcours",
+      "p1": "J’enseigne le français à des adultes et à des jeunes de niveaux et d’horizons variés.",
+      "p2": "Mon objectif est de rendre l’apprentissage du français clair, motivant et adapté à chaque élève."
+    },
+    "expect": {
+      "title": "Ce que vous pouvez attendre",
+      "points": {
+        "personalized": "Des cours adaptés à votre niveau et à vos objectifs",
+        "safe": "Un cadre bienveillant et rassurant",
+        "progress": "Une progression claire et visible",
+        "support": "Un accompagnement et des retours réguliers"
+      }
+    },
+    "cta": {
+      "title": "Travaillons ensemble",
+      "subtitle": "Si vous souhaitez commencer ou poursuivre l’apprentissage du français, je serai ravie de vous aider.",
+      "button": "Me contacter"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<section class="programs">
+  <header class="page-header">
+    <h1>{{ 'programs.pageTitle' | translate }}</h1>
+    <p>{{ 'programs.pageSubtitle' | translate }}</p>
+  </header>
+
+  <div class="program-list">
+    @for (p of programs; track p.id) {
+      <article class="program-card" [class.open]="openId() === p.id">
+        <button class="program-header" (click)="toggle(p)">
+          <h2>{{ p.titleKey | translate }}</h2>
+          <span class="chevron">⌄</span>
+        </button>
+
+        @if (openId() === p.id) {
+          <div class="program-body">
+            @if (p.hasVideo) {
+              <div class="video-placeholder">
+                <div class="video-box">
+                  <span class="play">▶</span>
+                </div>
+                <p class="video-caption">
+                  {{ 'programs.videoPlaceholder' | translate }}
+                </p>
+              </div>
+            }
+            @if (getLevelDescKey(p)) {
+              <p class="description">
+                {{ getLevelDescKey(p)! | translate }}
+              </p>
+            } @else {
+              <p class="description">
+                {{ p.descKey | translate }}
+              </p>
+            }
+
+            @if (p.type === 'workshop') {
+              <div class="workshop-list">
+                @for (w of workshops; track w.id) {
+                  <div class="workshop-card">
+                    <h3>{{ w.titleKey | translate }}</h3>
+
+                    <p class="workshop-desc">
+                      {{ w.descKey | translate }}
+                    </p>
+
+                    <div class="workshop-meta">
+                      @if (w.level) {
+                        <span class="badge">Level {{ w.level }}</span>
+                      }
+                      <span class="badge">{{ w.duration }}</span>
+                    </div>
+                  </div>
+                }
+              </div>
+            }
+
+            @if (p.levels) {
+              <div class="levels">
+                @for (lvl of p.levels; track lvl) {
+                  <button
+                    class="level-pill"
+                    [class.active]="getActiveLevel(p.id) === lvl"
+                    (click)="selectLevel(p.id, lvl)"
+                  >
+                    {{ lvl }}
+                  </button>
+                }
+              </div>
+            }
+
+            <div class="cta">
+              <a class="btn">
+                {{ 'programs.cta' | translate }}
+              </a>
+            </div>
+          </div>
+        }
+      </article>
+    }
+  </div>
+</section>

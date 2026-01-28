@@ -1,0 +1,21 @@
+import { Injectable } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+
+@Injectable({ providedIn: 'root' })
+export class SeoService {
+  constructor(
+    private title: Title,
+    private meta: Meta,
+  ) {}
+
+  setTitle(value: string) {
+    this.title.setTitle(value);
+  }
+
+  setDescription(value: string) {
+    this.meta.updateTag({
+      name: 'description',
+      content: value,
+    });
+  }
+}

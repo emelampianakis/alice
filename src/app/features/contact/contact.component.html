@@ -1,0 +1,43 @@
+<section class="contact">
+  <!-- HEADER -->
+  <header class="header">
+    <h1>{{ 'contact.title' | translate }}</h1>
+    <p>{{ 'contact.subtitle' | translate }}</p>
+  </header>
+
+  <!-- QUICK CONTACT -->
+  <section class="quick">
+    <a class="quick-item" href="mailto:alice@email.com"> ✉️ alice@email.com </a>
+
+    <a class="quick-item" href="https://wa.me/33600000000" target="_blank" rel="noopener">
+      💬 WhatsApp
+    </a>
+  </section>
+
+  <!-- FORM -->
+  <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+    <label>
+      {{ 'contact.form.name' | translate }}
+      <input type="text" formControlName="name" />
+    </label>
+
+    <label>
+      {{ 'contact.form.email' | translate }}
+      <input type="email" formControlName="email" />
+    </label>
+
+    <label>
+      {{ 'contact.form.message' | translate }}
+      <textarea rows="5" formControlName="message"></textarea>
+    </label>
+
+    <button class="btn primary" type="submit" [disabled]="form.invalid">
+      {{ 'contact.form.submit' | translate }}
+    </button>
+  </form>
+
+  <!-- REASSURANCE -->
+  <p class="reassurance">
+    {{ 'contact.reassurance' | translate }}
+  </p>
+</section>

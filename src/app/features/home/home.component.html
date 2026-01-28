@@ -1,0 +1,86 @@
+<section class="home">
+  <!-- HERO -->
+  <section class="hero">
+    <h1>{{ 'home.hero.title' | translate }}</h1>
+    <p class="subtitle">{{ 'home.hero.subtitle' | translate }}</p>
+
+    <div class="hero-actions">
+      <a class="btn primary" [routerLink]="['/', lang(), 'programs']">
+        {{ 'home.hero.ctaPrimary' | translate }}
+      </a>
+
+      <a class="btn secondary" [routerLink]="['/', lang(), 'contact']">
+        {{ 'home.hero.ctaSecondary' | translate }}
+      </a>
+    </div>
+  </section>
+
+  <!-- INTRO VIDEO (placeholder) -->
+  <section class="intro-video">
+    <div class="video-box" tabindex="0" aria-label="Presentation video">
+      <span class="play">▶</span>
+    </div>
+    <p class="caption">
+      {{ 'home.video.caption' | translate }}
+    </p>
+  </section>
+
+  <!-- PROGRAMS TEASER -->
+  <section class="programs-teaser">
+    <h2>{{ 'home.programs.title' | translate }}</h2>
+
+    <div class="program-cards">
+      <div class="card">
+        <h3>{{ 'home.programs.general.title' | translate }}</h3>
+        <p>{{ 'home.programs.general.desc' | translate }}</p>
+      </div>
+
+      <div class="card">
+        <h3>{{ 'home.programs.conversation.title' | translate }}</h3>
+        <p>{{ 'home.programs.conversation.desc' | translate }}</p>
+      </div>
+
+      <div class="card">
+        <h3>{{ 'home.programs.exam.title' | translate }}</h3>
+        <p>{{ 'home.programs.exam.desc' | translate }}</p>
+      </div>
+    </div>
+
+    <a class="btn primary" [routerLink]="['/', lang(), 'programs']">
+      {{ 'home.programs.cta' | translate }}
+    </a>
+  </section>
+
+  <section class="method">
+    <div class="method-content">
+      <div class="text">
+        <h2>{{ 'home.method.title' | translate }}</h2>
+        <p class="intro">
+          {{ 'home.method.intro' | translate }}
+        </p>
+
+        <ul class="points">
+          <li>{{ 'home.method.points.personalized' | translate }}</li>
+          <li>{{ 'home.method.points.structure' | translate }}</li>
+          <li>{{ 'home.method.points.support' | translate }}</li>
+          <li>{{ 'home.method.points.results' | translate }}</li>
+        </ul>
+      </div>
+
+      <div class="visual">
+        <div class="method-box">
+          <span>🎓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>{{ 'home.cta.title' | translate }}</h2>
+    <p>{{ 'home.cta.subtitle' | translate }}</p>
+
+    <a class="btn primary" [routerLink]="['/', lang(), 'contact']">
+      {{ 'home.cta.button' | translate }}
+    </a>
+  </section>
+</section>

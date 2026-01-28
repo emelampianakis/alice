@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "Home",
+    "programs": "Classes & Programs",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book a lesson"
+  },
+  "home": {
+    "title": "Learn French with confidence",
+    "subtitle": "General French, conversation, and DELF/DALF preparation",
+    "hero": {
+      "title": "Learn French with confidence",
+      "subtitle": "Online French classes, conversation and exam preparation",
+      "ctaPrimary": "See programs",
+      "ctaSecondary": "Book a lesson"
+    },
+    "video": {
+      "caption": "Presentation video coming soon"
+    },
+    "programs": {
+      "title": "Programs",
+      "cta": "Explore all programs",
+      "general": {
+        "title": "French language courses",
+        "desc": "Structured courses from A1 to C1."
+      },
+      "conversation": {
+        "title": "Conversation classes",
+        "desc": "Speak French with confidence and fluency."
+      },
+      "exam": {
+        "title": "DELF / DALF preparation",
+        "desc": "Targeted exam preparation with methodology."
+      }
+    },
+    "method": {
+      "title": "My teaching approach",
+      "intro": "I help you learn French with clarity, confidence and structure.",
+      "points": {
+        "personalized": "Personalized lessons adapted to your goals",
+        "structure": "Clear structure and progressive learning",
+        "support": "Support and feedback between sessions",
+        "results": "Concrete results, especially for exams"
+      }
+    },
+    "cta": {
+      "title": "Ready to start learning French?",
+      "subtitle": "Tell me about your goals and let’s find the right format for you.",
+      "button": "Contact me"
+    }
+  },
+  "programs": {
+    "videoPlaceholder": "Presentation video coming soon",
+    "pageTitle": "Classes & Programs",
+    "pageSubtitle": "Choose the program that fits your goals",
+    "cta": "Book a lesson",
+    "general": {
+      "title": "French Language Courses",
+      "desc": "Structured French lessons from beginner to advanced level, focusing on grammar, vocabulary, comprehension, and expression.",
+      "levels": {
+        "A1": "Beginner level: learn basic grammar, pronunciation, and everyday vocabulary.",
+        "A2": "Elementary level: communicate in simple situations and build confidence.",
+        "B1": "Intermediate level: express opinions and understand longer conversations.",
+        "B2": "Upper-intermediate level: improve fluency and accuracy for work or studies.",
+        "C1": "Advanced level: master complex structures and nuanced expression."
+      }
+    },
+    "conversation": {
+      "title": "Conversation Classes",
+      "desc": "Improve your speaking confidence and fluency through guided conversations on real-life topics.",
+      "levels": {
+        "B1": "Guided conversations to gain confidence and speak more naturally.",
+        "B2": "Debates and discussions to refine fluency and vocabulary.",
+        "C1C2": "Advanced conversations focusing on precision, style, and argumentation."
+      }
+    },
+    "exam": {
+      "title": "DELF / DALF Preparation",
+      "desc": "Targeted preparation for DELF and DALF exams with methodology, mock exams, and personalized feedback.",
+      "levels": {
+        "A1": "Introduction to the DELF A1 exam format and expectations.",
+        "A2": "Training for DELF A2 with structured exercises and mock exams.",
+        "B1": "Focused preparation for DELF B1 with exam strategies.",
+        "B2": "Intensive preparation for DELF B2, including written and oral practice.",
+        "C1": "Advanced methodology for DALF C1 with detailed feedback.",
+        "C2": "High-level preparation for DALF C2 with complex analysis and expression."
+      }
+    },
+    "workshops": {
+      "title": "Thematic Workshops",
+      "desc": "Short, focused workshops on specific topics such as expatriation, grammar challenges, or pronunciation."
+    }
+  },
+  "workshops": {
+    "expatriation": {
+      "title": "Prepare your expatriation in France",
+      "desc": "Administrative steps, everyday life, and cultural tips to settle in France with confidence."
+    },
+    "subjonctif": {
+      "title": "Master the subjonctif",
+      "desc": "Understand and use the subjonctif naturally through guided practice."
+    },
+    "phonetics": {
+      "title": "French phonetics essentials",
+      "desc": "Improve pronunciation, rhythm, and intonation with practical exercises."
+    }
+  },
+  "seo": {
+    "programs": {
+      "title": "French classes, conversation & DELF/DALF preparation",
+      "description": "French lessons adapted to your level: general French, conversation classes, DELF/DALF exam preparation and thematic workshops."
+    },
+    "home": {
+      "title": "French classes online – Learn French with confidence",
+      "description": "Online French classes, conversation lessons, DELF/DALF preparation and thematic workshops."
+    },
+    "contact": {
+      "title": "Contact – French classes",
+      "description": "Contact me for French lessons, conversation classes or exam preparation."
+    },
+    "about": {
+      "title": "About me – French teacher",
+      "description": "Learn more about my background, teaching approach and how I help you learn French with confidence."
+    }
+  },
+  "footer": {
+    "tagline": "French teacher",
+    "rights": "All rights reserved"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Tell me about your goals and availability",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send message"
+    },
+    "reassurance": "I usually reply within 24 hours."
+  },
+  "about": {
+    "title": "About me",
+    "lead": "I am a French teacher passionate about helping learners feel confident and comfortable in French.",
+    "story": {
+      "title": "My story",
+      "p1": "I have been teaching French to adults and young learners from different backgrounds and levels.",
+      "p2": "My goal is to make learning French clear, motivating and adapted to each student."
+    },
+    "expect": {
+      "title": "What you can expect",
+      "points": {
+        "personalized": "Lessons adapted to your level and objectives",
+        "safe": "A supportive and relaxed learning environment",
+        "progress": "Clear structure and visible progress",
+        "support": "Feedback and guidance throughout your learning"
+      }
+    },
+    "cta": {
+      "title": "Let’s work together",
+      "subtitle": "If you want to start or continue learning French, I’d be happy to help.",
+      "button": "Contact me"
+    }
+  }
+}
