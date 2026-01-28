@@ -1,15 +1,5 @@
 <!doctype html>
 <html lang="en">
-  <script>
-    (function () {
-      const redirect = sessionStorage.getItem('spa-redirect');
-      if (redirect) {
-        sessionStorage.removeItem('spa-redirect');
-        history.replaceState(null, '', redirect);
-      }
-    })();
-  </script>
-
   <head>
     <meta charset="utf-8" />
     <title>FrenchTeacherSite</title>
