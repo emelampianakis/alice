@@ -2,13 +2,16 @@
 <html lang="en">
   <script>
     (function () {
+      const base = '/alice';
       const params = new URLSearchParams(window.location.search);
       const redirect = params.get('redirect');
+
       if (redirect) {
-        history.replaceState(null, '', redirect);
+        history.replaceState(null, '', base + redirect);
       }
     })();
   </script>
+
   <head>
     <meta charset="utf-8" />
     <title>FrenchTeacherSite</title>
