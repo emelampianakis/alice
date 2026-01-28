@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
-      location.replace('/alice/');
+      sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash);
+      location.replace('/alice/index.html');
     </script>
   </head>
   <body></body>

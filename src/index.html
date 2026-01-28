@@ -2,10 +2,10 @@
 <html lang="en">
   <script>
     (function () {
-      const redirect = sessionStorage.getItem('redirect');
+      const redirect = sessionStorage.getItem('spa-redirect');
       if (redirect) {
-        sessionStorage.removeItem('redirect');
-        history.replaceState(null, '', redirect.replace('/alice', ''));
+        sessionStorage.removeItem('spa-redirect');
+        history.replaceState(null, '', redirect);
       }
     })();
   </script>
