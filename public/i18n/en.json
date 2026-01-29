@@ -6,7 +6,6 @@
     "contact": "Contact",
     "book": "Book a lesson"
   },
-
   "home": {
     "title": "Learn French with confidence",
     "subtitle": "General French, conversation, and DELF/DALF preparation",
@@ -51,7 +50,6 @@
       "button": "Contact me"
     }
   },
-
   "programs": {
     "pageTitle": "Classes & Programs",
     "pageSubtitle": "Choose the program that fits your goals",
@@ -59,7 +57,6 @@
     "ctaDisabled": "Choose a level to continue",
     "videoPlaceholder": "Presentation video coming soon",
     "levelLabel": "Level",
-
     "general": {
       "title": "French Language Courses",
       "desc": "Structured French lessons from beginner to advanced level, focusing on grammar, vocabulary, comprehension, and expression.",
@@ -71,7 +68,6 @@
         "C1": "Advanced level: master complex structures and nuanced expression."
       }
     },
-
     "conversation": {
       "title": "Conversation Classes",
       "desc": "Improve your speaking confidence and fluency through guided conversations on real-life topics.",
@@ -81,7 +77,6 @@
         "C1C2": "Advanced conversations focusing on precision, style, and argumentation."
       }
     },
-
     "exam": {
       "title": "DELF / DALF Preparation",
       "desc": "Targeted preparation for DELF and DALF exams with methodology, mock exams, and personalized feedback.",
@@ -94,13 +89,11 @@
         "C2": "High-level preparation for DALF C2 with complex analysis and expression."
       }
     },
-
     "workshops": {
       "title": "Thematic Workshops",
       "desc": "Short, focused workshops on specific topics such as expatriation, grammar challenges, or pronunciation."
     }
   },
-
   "workshops": {
     "expatriation": {
       "title": "Prepare your expatriation in France",
@@ -115,7 +108,6 @@
       "desc": "Improve pronunciation, rhythm, and intonation with practical exercises."
     }
   },
-
   "contact": {
     "title": "Contact me",
     "subtitle": "Tell me about your goals and availability",
@@ -130,9 +122,10 @@
       "message": "Your message",
       "submit": "Send message"
     },
-    "reassurance": "I usually reply within 24 hours."
+    "reassurance": "I usually reply within 24 hours.",
+    "prefill": "I would like to book",
+    "success": "Thank you! Your message has been sent."
   },
-
   "about": {
     "title": "About me",
     "lead": "I am a French teacher passionate about helping learners feel confident and comfortable in French.",
@@ -171,7 +164,6 @@
       "button": "Contact me"
     }
   },
-
   "seo": {
     "home": {
       "title": "French classes online – Learn French with confidence",
@@ -190,7 +182,6 @@
       "description": "Learn more about my background, teaching approach and how I help you learn French with confidence."
     }
   },
-
   "footer": {
     "tagline": "French teacher",
     "rights": "All rights reserved"

@@ -59,7 +59,6 @@
     "ctaDisabled": "Choisissez un niveau pour continuer",
     "videoPlaceholder": "Vidéo de présentation à venir",
     "levelLabel": "Niveau",
-
     "general": {
       "title": "Cours de français",
       "desc": "Cours de français structurés du niveau débutant au niveau avancé, axés sur la grammaire, le vocabulaire, la compréhension et l’expression.",
@@ -71,7 +70,6 @@
         "C1": "Niveau avancé : maîtriser des structures complexes et une expression nuancée."
       }
     },
-
     "conversation": {
       "title": "Cours de conversation",
       "desc": "Améliorez votre aisance à l’oral grâce à des conversations guidées sur des thèmes du quotidien.",
@@ -81,7 +79,6 @@
         "C1C2": "Conversations avancées axées sur la précision, le style et l’argumentation."
       }
     },
-
     "exam": {
       "title": "Préparation DELF / DALF",
       "desc": "Préparation ciblée aux examens DELF et DALF avec méthodologie, examens blancs et retours personnalisés.",
@@ -94,13 +91,11 @@
         "C2": "Préparation de haut niveau au DALF C2 avec analyses complexes et expression approfondie."
       }
     },
-
     "workshops": {
       "title": "Ateliers thématiques",
       "desc": "Ateliers courts et ciblés sur des thèmes spécifiques : expatriation, grammaire, prononciation."
     }
   },
-
   "workshops": {
     "expatriation": {
       "title": "Préparer son expatriation en France",
@@ -115,7 +110,6 @@
       "desc": "Améliorer la prononciation, le rythme et l’intonation avec des exercices pratiques."
     }
   },
-
   "contact": {
     "title": "Me contacter",
     "subtitle": "Parlez-moi de vos objectifs et de vos disponibilités",
@@ -130,9 +124,10 @@
       "message": "Votre message",
       "submit": "Envoyer le message"
     },
-    "reassurance": "Je réponds généralement sous 24 heures."
+    "reassurance": "Je réponds généralement sous 24 heures.",
+    "prefill": "Je souhaiterais réserver",
+    "success": "Merci ! Votre message a bien été envoyé."
   },
-
   "about": {
     "title": "À propos",
     "lead": "Je suis professeure de français et j’aide mes élèves à apprendre avec confiance et sérénité.",
@@ -140,6 +135,15 @@
       "title": "Mon parcours",
       "p1": "J’enseigne le français à des adultes et à des jeunes apprenants de niveaux et d’horizons variés.",
       "p2": "Mon objectif est de rendre l’apprentissage du français clair, motivant et adapté à chaque élève."
+    },
+    "expect": {
+      "title": "Ce que vous pouvez attendre",
+      "points": {
+        "personalized": "Des cours personnalisés selon vos objectifs",
+        "safe": "Un cadre bienveillant et détendu",
+        "progress": "Une progression claire et structurée",
+        "support": "Un accompagnement et des retours réguliers"
+      }
     },
     "experience": {
       "title": "Expérience & qualifications",
@@ -154,15 +158,6 @@
       "audience": {
         "title": "Public international",
         "desc": "Habituée à accompagner des apprenants de cultures et de pays différents."
-      }
-    },
-    "expect": {
-      "title": "Ce que vous pouvez attendre",
-      "points": {
-        "personalized": "Des cours personnalisés selon vos objectifs",
-        "safe": "Un cadre bienveillant et détendu",
-        "progress": "Une progression claire et structurée",
-        "support": "Un accompagnement et des retours réguliers"
       }
     },
     "cta": {
@@ -189,7 +184,6 @@
       "description": "Découvrez mon parcours, ma méthode et comment je vous aide à apprendre le français avec confiance."
     }
   },
-
   "footer": {
     "tagline": "Professeure de français",
     "rights": "Tous droits réservés"

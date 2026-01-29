@@ -21,6 +21,10 @@ export class ContactComponent implements OnInit {
 
   lang = computed(() => this.langSvc.lang());
 
+  program?: string;
+  level?: string;
+  submitted = false;
+
   form = this.fb.nonNullable.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
@@ -40,25 +44,19 @@ export class ContactComponent implements OnInit {
       this.level = params.get('level') ?? undefined;
 
       if (this.program) {
-        const message = `I would like to book ${this.program}${
-          this.level ? ' (' + this.level + ')' : ''
-        }.`;
-
+        const base = this.translate.instant('contact.prefill');
+        const message = `${base} ${this.program}${this.level ? ' (' + this.level + ')' : ''}.`;
         this.form.patchValue({ message });
       }
     });
   }
 
-  program?: string;
-  level?: string;
-
   submit() {
     if (this.form.invalid) return;
 
-    // Placeholder: later connect to backend / email service
     console.log('Contact form', this.form.value);
 
     this.form.reset();
-    alert('Message sent (placeholder)');
+    this.submitted = true;
   }
 }

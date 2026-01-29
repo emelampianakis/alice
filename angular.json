@@ -29,6 +29,7 @@
                 "input": "public"
               }
             ],
+            "externalDependencies": ["fonts/*"],
             "styles": ["src/styles.scss"],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -87,6 +88,7 @@
                 "input": "public"
               }
             ],
+            "externalDependencies": ["fonts/*"],
             "styles": ["src/styles.scss"]
           },
           "configurations": {
