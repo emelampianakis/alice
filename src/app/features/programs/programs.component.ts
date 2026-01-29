@@ -1,20 +1,24 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SeoService } from '../../core/seo/seo.service';
 
 import { PROGRAMS, WORKSHOPS } from './programs.data';
 import { Program, Level, Workshop } from './programs.model';
+import { RouterLink } from '@angular/router';
+import { LanguageService } from '../../core/i18n/language.service';
 
 @Component({
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './programs.component.html',
   styleUrls: ['./programs.component.scss'],
 })
 export class ProgramsComponent {
   private seo = inject(SeoService);
   private translate = inject(TranslateService);
+  private langSvc = inject(LanguageService);
 
+  lang = computed(() => this.langSvc.lang());
   programs = PROGRAMS;
   workshops: Workshop[] = WORKSHOPS;
 

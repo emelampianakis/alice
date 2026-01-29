@@ -1,0 +1,67 @@
+<header class="hdr" role="banner">
+  <div class="inner">
+    <!-- Logo -->
+    <a class="logo" [routerLink]="['/', lang(), '']">Alice</a>
+
+    <!-- Desktop navigation -->
+    <nav class="nav">
+      <a [routerLink]="['/', lang(), '']" [class.active]="activePath === 'home'">
+        {{ 'nav.home' | translate }}
+      </a>
+      <a [routerLink]="['/', lang(), 'programs']" [class.active]="activePath === 'programs'">
+        {{ 'nav.programs' | translate }}
+      </a>
+      <a [routerLink]="['/', lang(), 'about']" [class.active]="activePath === 'about'">
+        {{ 'nav.about' | translate }}
+      </a>
+      <a [routerLink]="['/', lang(), 'contact']" [class.active]="activePath === 'contact'">
+        {{ 'nav.contact' | translate }}
+      </a>
+    </nav>
+
+    <!-- Right actions -->
+    <div class="actions">
+      <button class="lang" (click)="switchLang()" aria-label="Switch language">
+        {{ otherLangLabel() }}
+      </button>
+
+      <button class="burger" aria-label="Open menu" (click)="toggleMenu()">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  @if (menuOpen()) {
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu">
+        <a
+          [routerLink]="['/', lang(), '']"
+          [class.active]="activePath === 'home'"
+          (click)="closeMenu()"
+        >
+          {{ 'nav.home' | translate }}
+        </a>
+        <a
+          [routerLink]="['/', lang(), 'programs']"
+          [class.active]="activePath === 'programs'"
+          (click)="closeMenu()"
+        >
+          {{ 'nav.programs' | translate }}
+        </a>
+        <a
+          [routerLink]="['/', lang(), 'about']"
+          [class.active]="activePath === 'about'"
+          (click)="closeMenu()"
+        >
+          {{ 'nav.about' | translate }}
+        </a>
+        <a
+          [routerLink]="['/', lang(), 'contact']"
+          [class.active]="activePath === 'contact'"
+          (click)="closeMenu()"
+        >
+          {{ 'nav.contact' | translate }}
+        </a>
+      </div>
+    </div>
+  }
+</header>

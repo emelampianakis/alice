@@ -4,10 +4,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { SeoService } from '../../core/seo/seo.service';
 import { LanguageService } from '../../core/i18n/language.service';
+import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 
 @Component({
   standalone: true,
-  imports: [RouterLink, TranslateModule],
+  imports: [RouterLink, TranslateModule, ScrollRevealDirective],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })

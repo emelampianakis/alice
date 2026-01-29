@@ -1,68 +1,149 @@
+/* =========================
+   Layout
+   ========================= */
+
 .programs {
   max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
+/* =========================
+   Page Header
+   ========================= */
+
 .page-header {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   h1 {
     font-size: 40px;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
+    color: var(--color-text);
   }
 
   p {
     font-size: 18px;
-    opacity: 0.8;
+    color: var(--color-muted);
+    max-width: 600px;
   }
 }
+
+/* =========================
+   Program List
+   ========================= */
 
 .program-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .program-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
   overflow: hidden;
-  background: #fff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  }
 
   &.open {
-    border-color: #111;
+    border-color: var(--color-accent);
   }
 }
 
+/* =========================
+   Program Header
+   ========================= */
+
 .program-header {
   width: 100%;
-  padding: 18px 20px;
-  background: none;
+  padding: 20px;
+  background: transparent;
   border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  text-align: left;
 
   h2 {
     font-size: 20px;
     margin: 0;
+    color: var(--color-text);
   }
 
   .chevron {
     font-size: 18px;
     opacity: 0.6;
+    transition: transform 0.2s ease;
   }
 }
+
+.program-card.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* =========================
+   Program Body
+   ========================= */
 
 .program-body {
   padding: 0 20px 20px;
-
-  .description {
-    margin-bottom: 16px;
-    opacity: 0.85;
-  }
+  animation: fadeSlideIn 0.22s ease-out both;
 }
+
+.description {
+  margin-bottom: 16px;
+  color: var(--color-muted);
+}
+
+/* =========================
+   Video Placeholder
+   ========================= */
+
+.video-placeholder {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--color-accent-soft), var(--color-bg));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.video-box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.play {
+  font-size: 48px;
+  color: var(--color-accent-dark);
+  opacity: 0.85;
+}
+
+.video-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+/* =========================
+   Levels
+   ========================= */
 
 .levels {
   display: flex;
@@ -71,71 +152,93 @@
   margin-bottom: 18px;
 }
 
+.levels-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
 .level-pill {
-  padding: 8px 14px;
+  padding: 7px 14px;
   border-radius: 999px;
-  border: 1px solid #ccc;
-  background: #fff;
+  border: 1px solid var(--color-border);
+  background: transparent;
   cursor: pointer;
   font-size: 14px;
-
+  color: var(--color-text);
   transition:
     background-color 0.15s ease,
     color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.1s ease;
+    border-color 0.15s ease;
 
   &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
-
-  &:active {
-    transform: scale(0.97);
+    border-color: var(--color-accent);
   }
 
   &.active {
-    background: #111;
-    color: #fff;
-    border-color: #111;
+    background: var(--color-accent-soft);
+    color: var(--color-accent-dark);
+    border-color: var(--color-accent);
+    font-weight: 600;
   }
 }
 
+/* =========================
+   CTA
+   ========================= */
+
 .cta {
-  margin-top: 12px;
+  margin-left: auto;
 
   .btn {
-    display: inline-block;
-    padding: 10px 16px;
+    padding: 9px 16px;
     border-radius: 12px;
-    background: #111;
+    background: var(--color-accent);
     color: #fff;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btn:hover {
+    background: var(--color-accent-dark);
   }
 }
+
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* =========================
+   Workshops
+   ========================= */
 
 .workshop-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .workshop-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 14px;
-  padding: 14px;
-  background: #fafafa;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 16px;
 
   h3 {
     margin: 0 0 6px;
     font-size: 16px;
+    color: var(--color-text);
   }
 
   .workshop-desc {
     font-size: 14px;
-    opacity: 0.85;
+    color: var(--color-muted);
     margin-bottom: 10px;
   }
 }
@@ -150,60 +253,13 @@
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 999px;
-  background: #eee;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
 }
 
-.video-placeholder {
-  margin-bottom: 18px;
-  text-align: center;
-}
-
-.play {
-  font-size: 48px;
-  opacity: 0.6;
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.video-caption {
-  margin-top: 8px;
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-.video-box {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, #eaeaea, #f5f5f5);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.video-box:hover {
-  transform: scale(1.01);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.video-box:hover .play {
-  transform: scale(1.1);
-  opacity: 0.85;
-}
-
-.program-card {
-  transition: border-color 0.2s ease;
-}
-
-.program-body {
-  animation: fadeSlideIn 0.22s ease-out both;
-}
+/* =========================
+   Animations
+   ========================= */
 
 @keyframes fadeSlideIn {
   from {
@@ -216,17 +272,29 @@
   }
 }
 
-.chevron {
-  transition: transform 0.2s ease;
-}
-
-.program-card.open .chevron {
-  transform: rotate(180deg);
-}
+/* =========================
+   Reduced Motion
+   ========================= */
 
 @media (prefers-reduced-motion: reduce) {
   .programs * {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .levels-row {
+    justify-content: center;
+  }
+
+  .cta {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta .btn {
+    width: 100%;
   }
 }

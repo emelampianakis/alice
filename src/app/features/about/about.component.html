@@ -1,6 +1,6 @@
 <section class="about">
   <!-- INTRO -->
-  <section class="intro">
+  <section class="intro reveal" scrollReveal>
     <div class="text">
       <h1>{{ 'about.title' | translate }}</h1>
       <p class="lead">
@@ -14,14 +14,38 @@
   </section>
 
   <!-- STORY -->
-  <section class="story">
+  <section class="story reveal" scrollReveal>
     <h2>{{ 'about.story.title' | translate }}</h2>
     <p>{{ 'about.story.p1' | translate }}</p>
     <p>{{ 'about.story.p2' | translate }}</p>
   </section>
 
+  <section class="experience reveal" scrollReveal>
+    <h2>{{ 'about.experience.title' | translate }}</h2>
+
+    <div class="experience-grid">
+      <div class="exp-card">
+        <span class="icon">🎓</span>
+        <h3>{{ 'about.experience.education.title' | translate }}</h3>
+        <p>{{ 'about.experience.education.desc' | translate }}</p>
+      </div>
+
+      <div class="exp-card">
+        <span class="icon">🗣️</span>
+        <h3>{{ 'about.experience.experience.title' | translate }}</h3>
+        <p>{{ 'about.experience.experience.desc' | translate }}</p>
+      </div>
+
+      <div class="exp-card">
+        <span class="icon">🌍</span>
+        <h3>{{ 'about.experience.audience.title' | translate }}</h3>
+        <p>{{ 'about.experience.audience.desc' | translate }}</p>
+      </div>
+    </div>
+  </section>
+
   <!-- WHAT TO EXPECT -->
-  <section class="expect">
+  <section class="expect reveal" scrollReveal>
     <h2>{{ 'about.expect.title' | translate }}</h2>
 
     <ul>
@@ -33,7 +57,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="about-cta">
+  <section class="about-cta reveal" scrollReveal>
     <h2>{{ 'about.cta.title' | translate }}</h2>
     <p>{{ 'about.cta.subtitle' | translate }}</p>
 

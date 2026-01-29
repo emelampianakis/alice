@@ -84,3 +84,20 @@ textarea {
   font-size: 14px;
   opacity: 0.7;
 }
+
+.contact-context {
+  background: var(--color-accent-soft);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin: 24px 0;
+  color: var(--color-text);
+
+  p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  strong {
+    color: var(--color-accent-dark);
+  }
+}

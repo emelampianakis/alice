@@ -1,6 +1,7 @@
-import { Component, inject, computed } from '@angular/core';
+import { Component, inject, computed, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 import { SeoService } from '../../core/seo/seo.service';
 import { LanguageService } from '../../core/i18n/language.service';
@@ -11,11 +12,12 @@ import { LanguageService } from '../../core/i18n/language.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   private seo = inject(SeoService);
   private translate = inject(TranslateService);
   private fb = inject(FormBuilder);
   private langSvc = inject(LanguageService);
+  private route = inject(ActivatedRoute);
 
   lang = computed(() => this.langSvc.lang());
 
@@ -31,6 +33,24 @@ export class ContactComponent {
       this.seo.setDescription(t['seo.contact.description']);
     });
   }
+
+  ngOnInit() {
+    this.route.queryParamMap.subscribe((params) => {
+      this.program = params.get('program') ?? undefined;
+      this.level = params.get('level') ?? undefined;
+
+      if (this.program) {
+        const message = `I would like to book ${this.program}${
+          this.level ? ' (' + this.level + ')' : ''
+        }.`;
+
+        this.form.patchValue({ message });
+      }
+    });
+  }
+
+  program?: string;
+  level?: string;
 
   submit() {
     if (this.form.invalid) return;

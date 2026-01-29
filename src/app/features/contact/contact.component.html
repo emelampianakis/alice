@@ -4,6 +4,18 @@
     <h1>{{ 'contact.title' | translate }}</h1>
     <p>{{ 'contact.subtitle' | translate }}</p>
   </header>
+  
+  @if (program) {
+    <div class="contact-context">
+      <p>
+        {{ 'contact.context' | translate }}
+        <strong>{{ program }}</strong>
+        @if (level) {
+          ({{ level }})
+        }
+      </p>
+    </div>
+  }
 
   <!-- QUICK CONTACT -->
   <section class="quick">

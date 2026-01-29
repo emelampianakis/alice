@@ -56,24 +56,35 @@
             }
 
             @if (p.levels) {
-              <div class="levels">
-                @for (lvl of p.levels; track lvl) {
-                  <button
-                    class="level-pill"
-                    [class.active]="getActiveLevel(p.id) === lvl"
-                    (click)="selectLevel(p.id, lvl)"
+              <div class="levels-row">
+                <div class="levels">
+                  @for (lvl of p.levels; track lvl) {
+                    <button
+                      type="button"
+                      class="level-pill"
+                      [class.active]="getActiveLevel(p.id) === lvl"
+                      (click)="selectLevel(p.id, lvl)"
+                    >
+                      {{ lvl }}
+                    </button>
+                  }
+                </div>
+
+                <div class="cta">
+                  <a
+                    class="btn"
+                    [class.disabled]="p.levels && !getActiveLevel(p.id)"
+                    [routerLink]="['/', lang(), 'contact']"
+                    [queryParams]="{
+                      program: p.id,
+                      level: getActiveLevel(p.id),
+                    }"
                   >
-                    {{ lvl }}
-                  </button>
-                }
+                    {{ 'programs.cta' | translate }}
+                  </a>
+                </div>
               </div>
             }
-
-            <div class="cta">
-              <a class="btn">
-                {{ 'programs.cta' | translate }}
-              </a>
-            </div>
           </div>
         }
       </article>

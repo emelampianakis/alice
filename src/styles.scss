@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================
+   Fonts
+   ========================= */
+
+/* Inter – variable */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* DM Serif Display */
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Base */
+  --color-bg: #f8f7f4; /* Warm light neutral */
+  --color-surface: #ffffff; /* Cards */
+  --color-text: #2e2a28; /* Soft charcoal */
+  --color-muted: #7c746f; /* Muted text */
+
+  /* Accent */
+  --color-accent: #e07a5f; /* Warm modern coral */
+  --color-accent-soft: #f3d6cc;
+  --color-accent-dark: #c45a3f;
+}
+
+/* =========================
+   Fonts
+   ========================= */
+
+/* Inter – variable */
+html,
+body {
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Ensure all components inherit */
+* {
+  font-family: inherit;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Serif Display', serif;
+}

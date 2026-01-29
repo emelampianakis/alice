@@ -1,0 +1,128 @@
+.hdr {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  gap: 18px;
+  margin-left: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: var(--color-text);
+}
+
+/* Right side */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.lang {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+@media (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .mobile-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    z-index: 30;
+  }
+
+  .mobile-menu {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    animation: slideDownRight 0.25s ease-out both;
+  }
+
+  .mobile-menu a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .mobile-menu a.active {
+    background: var(--color-accent-soft);
+    color: var(--color-accent-dark);
+  }
+}
+
+@keyframes slideDownRight {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

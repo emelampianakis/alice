@@ -6,6 +6,7 @@
     "contact": "Contact",
     "book": "Book a lesson"
   },
+
   "home": {
     "title": "Learn French with confidence",
     "subtitle": "General French, conversation, and DELF/DALF preparation",
@@ -50,11 +51,15 @@
       "button": "Contact me"
     }
   },
+
   "programs": {
-    "videoPlaceholder": "Presentation video coming soon",
     "pageTitle": "Classes & Programs",
     "pageSubtitle": "Choose the program that fits your goals",
     "cta": "Book a lesson",
+    "ctaDisabled": "Choose a level to continue",
+    "videoPlaceholder": "Presentation video coming soon",
+    "levelLabel": "Level",
+
     "general": {
       "title": "French Language Courses",
       "desc": "Structured French lessons from beginner to advanced level, focusing on grammar, vocabulary, comprehension, and expression.",
@@ -66,6 +71,7 @@
         "C1": "Advanced level: master complex structures and nuanced expression."
       }
     },
+
     "conversation": {
       "title": "Conversation Classes",
       "desc": "Improve your speaking confidence and fluency through guided conversations on real-life topics.",
@@ -75,6 +81,7 @@
         "C1C2": "Advanced conversations focusing on precision, style, and argumentation."
       }
     },
+
     "exam": {
       "title": "DELF / DALF Preparation",
       "desc": "Targeted preparation for DELF and DALF exams with methodology, mock exams, and personalized feedback.",
@@ -87,11 +94,13 @@
         "C2": "High-level preparation for DALF C2 with complex analysis and expression."
       }
     },
+
     "workshops": {
       "title": "Thematic Workshops",
       "desc": "Short, focused workshops on specific topics such as expatriation, grammar challenges, or pronunciation."
     }
   },
+
   "workshops": {
     "expatriation": {
       "title": "Prepare your expatriation in France",
@@ -106,31 +115,15 @@
       "desc": "Improve pronunciation, rhythm, and intonation with practical exercises."
     }
   },
-  "seo": {
-    "programs": {
-      "title": "French classes, conversation & DELF/DALF preparation",
-      "description": "French lessons adapted to your level: general French, conversation classes, DELF/DALF exam preparation and thematic workshops."
-    },
-    "home": {
-      "title": "French classes online – Learn French with confidence",
-      "description": "Online French classes, conversation lessons, DELF/DALF preparation and thematic workshops."
-    },
-    "contact": {
-      "title": "Contact – French classes",
-      "description": "Contact me for French lessons, conversation classes or exam preparation."
-    },
-    "about": {
-      "title": "About me – French teacher",
-      "description": "Learn more about my background, teaching approach and how I help you learn French with confidence."
-    }
-  },
-  "footer": {
-    "tagline": "French teacher",
-    "rights": "All rights reserved"
-  },
+
   "contact": {
     "title": "Contact me",
     "subtitle": "Tell me about your goals and availability",
+    "context": "I would like to book:",
+    "quick": {
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
     "form": {
       "name": "Your name",
       "email": "Your email",
@@ -139,6 +132,7 @@
     },
     "reassurance": "I usually reply within 24 hours."
   },
+
   "about": {
     "title": "About me",
     "lead": "I am a French teacher passionate about helping learners feel confident and comfortable in French.",
@@ -156,10 +150,49 @@
         "support": "Feedback and guidance throughout your learning"
       }
     },
+    "experience": {
+      "title": "Experience & qualifications",
+      "education": {
+        "title": "Education",
+        "desc": "Certified French teacher with academic training in language teaching."
+      },
+      "experience": {
+        "title": "Teaching experience",
+        "desc": "Several years teaching French online to adults and young learners."
+      },
+      "audience": {
+        "title": "International students",
+        "desc": "Experience with learners from many countries and cultural backgrounds."
+      }
+    },
     "cta": {
       "title": "Let’s work together",
       "subtitle": "If you want to start or continue learning French, I’d be happy to help.",
       "button": "Contact me"
     }
+  },
+
+  "seo": {
+    "home": {
+      "title": "French classes online – Learn French with confidence",
+      "description": "Online French classes, conversation lessons, DELF/DALF preparation and thematic workshops."
+    },
+    "programs": {
+      "title": "French classes, conversation & DELF/DALF preparation",
+      "description": "French lessons adapted to your level: general French, conversation classes, DELF/DALF exam preparation and thematic workshops."
+    },
+    "contact": {
+      "title": "Contact – French classes",
+      "description": "Contact me for French lessons, conversation classes or exam preparation."
+    },
+    "about": {
+      "title": "About me – French teacher",
+      "description": "Learn more about my background, teaching approach and how I help you learn French with confidence."
+    }
+  },
+
+  "footer": {
+    "tagline": "French teacher",
+    "rights": "All rights reserved"
   }
 }
