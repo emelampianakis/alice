@@ -29,7 +29,6 @@
                 "input": "public"
               }
             ],
-            "externalDependencies": ["fonts/*"],
             "styles": ["src/styles.scss"],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -88,12 +87,12 @@
                 "input": "public"
               }
             ],
-            "externalDependencies": ["fonts/*"],
             "styles": ["src/styles.scss"]
           },
           "configurations": {
             "pages": {
               "outputHashing": "all",
+              "deployUrl": "/alice/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
